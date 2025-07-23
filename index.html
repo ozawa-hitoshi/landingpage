@@ -44,29 +44,37 @@
       font-weight: bold;
       margin-top: 120px;
       margin-bottom: 0.5em;
-      text-shadow: 0 0 16px #00fff7, 0 0 32px #0ff;
+      /* text-shadow removed */
     }
     .subtitle {
       font-size: 1.5rem;
-      margin-bottom: 2em;
-      text-shadow: 0 0 8px #00fff7;
+      margin-bottom: 1em;
+      /* text-shadow removed */
     }
-    .get-notified-btn {
-      background: linear-gradient(90deg, #00fff7 0%, #007cf0 100%);
-      color: #111;
-      border: none;
-      border-radius: 32px;
-      padding: 1em 2.5em;
-      font-size: 1.2rem;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0 0 16px #00fff7, 0 0 32px #0ff;
-      transition: background 0.2s, color 0.2s;
+    .coming-soon {
+      font-size: 1.5rem;
       margin-bottom: 3em;
     }
-    .get-notified-btn:hover {
-      background: linear-gradient(90deg, #007cf0 0%, #00fff7 100%);
+    .get-notified-btn {
+      background: transparent;
       color: #fff;
+      border: none;
+      border-radius: 0;
+      padding: 0;
+      font-size: 1.5rem;
+      font-weight: normal;
+      cursor: pointer;
+      box-shadow: none;
+      transition: none;
+      margin-bottom: 4em;
+      text-decoration: underline;
+    }
+    .get-notified-btn:hover {
+      background: transparent;
+      color: #fff;
+    }
+    .supported-by-title {
+        margin-bottom: 1em;
     }
     .partners {
       display: flex;
@@ -74,7 +82,7 @@
       justify-content: center;
       align-items: center;
       gap: 2.5em;
-      margin-top: 2em;
+      margin-top: 1em;
       margin-bottom: 2em;
       flex-wrap: wrap;
     }
@@ -89,6 +97,8 @@
     @media (max-width: 600px) {
       .title { font-size: 2rem; }
       .subtitle { font-size: 1rem; }
+      .coming-soon { font-size: 1rem; }
+      .get-notified-btn { font-size: 1rem; }
       .logo-top-left { width: 80px; top: 12px; left: 12px; }
       .partner-logo { height: 36px; max-width: 100px; }
     }
@@ -97,9 +107,11 @@
 <body>
   <img src="ArtAssets/QuurkLogo.png" alt="Quurk Logo" class="logo-top-left" />
   <div class="main-content">
-    <div class="title">Welcome to Quurk</div>
-    <div class="subtitle">The next generation of digital intelligence. <br/> Stay tuned for updates!</div>
+    <div class="title">Reality Gets An Upgrade</div>
+    <div class="subtitle">Your Universe, Your Agents, Your Rules.</div>
+    <div class="coming-soon">Coming Soon.</div>
     <button class="get-notified-btn" onclick="window.open('https://forms.gle/PQuUN7zB2jE6jP1H8', '_blank')">Get Notified</button>
+    <div class="supported-by-title">Supported By:</div>
     <div class="partners">
       <img src="ArtAssets/aws_white.png" alt="AWS Logo" class="partner-logo" />
       <img src="ArtAssets/elevenlabs-logo-white.png" alt="ElevenLabs Logo" class="partner-logo" />
